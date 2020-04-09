@@ -1,0 +1,16 @@
+Step 1 - Install Express . Say install is under the directory '/server'
+Step 2 - Mongoose
+Step 3- install Angular 9 - from within "/server" execute 'ng new <app-name>'
+Step 4 - Run 'ng add apollo-angular'
+Step 5 - Edit "graphql.modules.ts"  file. Set the 'uri' constant to the graphQL server url e.g. 'localhost:3000/graphql'
+Step 6 - Create Component under model use the following command
+'ng g c <component-name> --module app'
+Step 7 - To create components with structure like so
+books
+    /detail
+    /add
+    /edit
+'cd src/app/<component-directory-under=which-new component needs to be created'
+in our case above
+'cd src/app/books' then use this command like so
+'ng g c detail --module ../'
